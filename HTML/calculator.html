@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Calculator</Title>
+        <style>
+
+            #parent{
+                background-color: grey;
+                width:40%;
+                margin-left: 300px;
+                margin-top:100px;
+                height: 50%;
+              
+
+            }
+            .child1{
+                background-color: black;
+                color:#ffffff;
+                height:30px;
+                font-weight:800;
+                text-align:end;
+                border:2px solid white
+            
+             
+            }
+            .child {
+                display:flex;
+                height:30px;
+                font-weight:800;
+                
+            }
+            .sub{
+                background-color:white;
+                color:black;
+                border:1px solid black;
+                text-align: center;
+                padding:4px;
+                margin:4px;
+                flex-grow:1;
+                font-weight:800;
+            
+                
+            }
+           
+            .c{
+                display:flex;
+            }
+            .s{
+                flex-grow:1;
+                background-color:white;
+                color:black;
+                border:1px solid black;
+                text-align: center;
+                padding:4px;
+                margin:4px;
+                font-weight:800;
+            
+            }
+            .del{
+                background-color: blue;
+                color:white;
+            }
+            .reset{
+               background-color: red;
+               color:white;
+            }
+            .eq{
+                background-color: aquamarine;
+                color:black
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+           <div class=" child1">
+                 6+6=12
+           </div>
+           <div class="child ">
+            <div class="sub sub1">7</div>
+            <div class="sub sub2">8</div>
+            <div class="sub sub3">9</div>
+            <div class="sub del">DEL</div>
+          </div>
+         
+          <div class="child ">
+            <div class="sub sub1">4</div>
+            <div class="sub sub2">5</div>
+            <div class="sub sub3">6</div>
+            <div class="sub sub4">+</div>
+          </div>
+          <div class="child ">
+            <div class="sub sub1">1</div>
+            <div class="sub sub2">2</div>
+            <div class="sub sub3">3</div>
+            <div class="sub sub4">-</div>
+          </div>
+          <div class="child ">
+            <div class="sub sub1">.</div>
+            <div class="sub sub2">0</div>
+            <div class="sub sub3">/</div>
+            <div class="sub sub4">x</div>
+          </div>
+          <div class="c" >
+              <div class="s reset">RESET</div>
+              <div class="s eq">=</div>
+
+          </div>
+        </div>
+    </body>
+</html>

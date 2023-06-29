@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator using Grid</title>
+        <style>
+            #parent{
+                background-color: white;
+                color:white;
+                border: 10px solid gray;
+                height: 400px;
+                width:500px;
+                display:grid;
+                width:50%;
+                margin-left:250px;
+                margin-top:100px;
+                row-gap:5px;
+                column-gap:5px;
+                grid-template-areas:
+                "ans ans ans ans"
+                "f s t fo"
+                "fi si se e"
+                "n th el tw"
+                "ti ff gg hh"
+                "res res res ac"
+              }
+              .ans{
+                grid-area:ans;
+              
+
+              }
+              
+              .res{
+                
+                grid-area:res;
+              }
+              .ac{
+                grid-area:ac;
+              }
+              
+           #parent div{
+                background-color:black;
+                font-size: 30px;
+                font-weight:700;
+                text-align:center;
+                border:5px solid white;
+           }
+         
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div class="ans" > <input type="text" style="width:500px; "/>  </div>
+            <div class="f"> 7</div>
+            <div class="s">8</div>
+            <div clas="t">9</div>
+            <div class="fo">+</div>
+            <div class="fi">4</div>
+            <div class="si">5</div>
+            <div class="se">6</div>
+            <div class="e">-</div>
+            <div class="n">1</div>
+            <div class="th">2</div>
+            <div class="el">3</div>
+            <div class="tw">x</div>
+            <div class="ti">0</div>
+            <div class="ff">00</div>
+            <div class="gg">.</div>
+            <div class="hh">/</div>
+            <div class="res" style="background-color: red;">=</div>
+            <div class="ac">AC</div>
+        </div>
+    </body>
+</html>

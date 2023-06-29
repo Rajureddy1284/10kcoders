@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS GRID</title>
+        <style>
+            #parent{
+                background-color:yellowgreen;
+                text-align: center;
+             
+            
+            }
+            .child1{
+                 background-color:black;
+                 color:white;
+                 height:300px;
+            }
+            .child2{
+                background-color:rgb(189, 31, 31);
+                 color:white;
+                 height:200px;
+            }
+            .child3{
+                background-color:rgb(222, 237, 228);
+                 color:black;
+                 height:300px;
+                 display: grid;
+                 grid-template-columns:2fr 1fr ;
+                 grid-template-rows:150px;
+                 column-gap:20px;
+                 row-gap:20px
+                
+                 
+           } 
+            .child4{
+                background-color:rgb(193, 137, 225);
+                 color:black;
+                 height:200px;
+            }
+            .sub1{
+                background-color: aqua;
+            }
+            .sub2{
+                background-color:grey
+            }
+            .sub3{
+                background-color:green
+            }
+
+        </style>
+    </head>
+    <body>
+         <div id="parent">
+            <div class="child child1"> header</div>
+            <div class="child child2">banner</div>
+            <div class="child child3">
+                <div class="sub1">Content1</div>
+                <div class="sub2">content2</div>
+                <div class="sub3">content3</div>
+            </div>
+            <div class="child child4">footer</div>
+         </div>
+
+    </body>
+</html>
